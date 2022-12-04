@@ -25,7 +25,8 @@ public class CountingCalories {
             }
             caloriesForEachElf.sort(Collections.reverseOrder());
             scanner.close();
-            System.out.println("Day 1: " + caloriesForEachElf.get(0));
+            System.out.println("Day 1 (part1): " + caloriesForEachElf.get(0));
+            System.out.println("Day 1 (part2): " + (caloriesForEachElf.get(0) + caloriesForEachElf.get(1) + caloriesForEachElf.get(2)));
         } catch (FileNotFoundException e) {
             System.out.println("An error occurred.");
             e.printStackTrace();
