@@ -5,15 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8b3c32d5-f905-4129-b04f-1e08040a8693" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AoC-2022.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day1.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/moko/aoc/Main.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/moko/aoc/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/moko/aoc/day1/CountingCalories.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/texts/day1.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AoC-2022/com/moko/aoc/day1/CountingCalories.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AoC-2022/com/moko/aoc/day1/CountingCalories.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/moko/aoc/day1/CountingCalories.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/moko/aoc/day1/CountingCalories.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,9 +42,15 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "jdk.selected.JAVA_MODULE": "19",
     "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/assets/text" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.moko.aoc.Main" />

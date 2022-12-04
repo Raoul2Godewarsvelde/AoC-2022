@@ -10,9 +10,9 @@ public class CountingCalories {
 
     public void getResult() {
         try {
-            File file = new File("day1.txt");
+            File file = new File("assets/texts/day1.txt");
             Scanner scanner = new Scanner(file);
-            ArrayList<Integer> caloriesForEachElf = new ArrayList<Integer>();
+            ArrayList<Integer> caloriesForEachElf = new ArrayList<>();
             int caloriesOfOneElf = 0;
             while (scanner.hasNextLine()) {
                 String data = scanner.nextLine();
