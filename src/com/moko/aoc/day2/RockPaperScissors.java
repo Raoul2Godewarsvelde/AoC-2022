@@ -40,7 +40,7 @@ public class RockPaperScissors {
         }
     }
 
-    public void getResult() {
+    public void solve() {
         try {
             File file = new File("assets/texts/day2.txt");
             Scanner scanner = new Scanner(file);

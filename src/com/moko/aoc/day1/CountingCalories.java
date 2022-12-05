@@ -8,7 +8,7 @@ import static java.lang.Integer.parseInt;
 
 public class CountingCalories {
 
-    public void getResult() {
+    public void solve() {
         try {
             File file = new File("assets/texts/day1.txt");
             Scanner scanner = new Scanner(file);
