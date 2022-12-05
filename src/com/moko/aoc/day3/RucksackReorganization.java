@@ -41,7 +41,7 @@ public class RucksackReorganization {
         return priorityValues.indexOf(getSharedItem(rucksackGroup)) + 1;
     }
 
-    public void getResult() {
+    public void solve() {
         try {
             File file = new File("assets/texts/day3.txt");
             Scanner scanner = new Scanner(file);
