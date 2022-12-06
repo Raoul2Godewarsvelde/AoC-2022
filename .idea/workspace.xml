@@ -5,16 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dfa7ed6a-3b5e-47bb-b06a-32f5613e2007" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/assets/texts/day4.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/moko/aoc/day4/CampCleanup.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/texts/day5.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/moko/aoc/day5/SupplyStacks.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/AoC-2022/com/moko/aoc/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AoC-2022/com/moko/aoc/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AoC-2022/com/moko/aoc/day1/CountingCalories.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AoC-2022/com/moko/aoc/day1/CountingCalories.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AoC-2022/com/moko/aoc/day3/RucksackReorganization.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AoC-2022/com/moko/aoc/day3/RucksackReorganization.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/moko/aoc/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/moko/aoc/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/moko/aoc/day1/CountingCalories.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/moko/aoc/day1/CountingCalories.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/moko/aoc/day2/RockPaperScissors.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/moko/aoc/day2/RockPaperScissors.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/moko/aoc/day3/RucksackReorganization.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/moko/aoc/day3/RucksackReorganization.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

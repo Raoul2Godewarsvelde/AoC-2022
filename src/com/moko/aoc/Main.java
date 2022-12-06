@@ -4,6 +4,7 @@ import com.moko.aoc.day1.CountingCalories;
 import com.moko.aoc.day2.RockPaperScissors;
 import com.moko.aoc.day3.RucksackReorganization;
 import com.moko.aoc.day4.CampCleanup;
+import com.moko.aoc.day5.SupplyStacks;
 
 import java.io.IOException;
 
@@ -21,5 +22,8 @@ public class Main {
 
         CampCleanup campCleanup = new CampCleanup();
         campCleanup.solve();
+
+        SupplyStacks supplyStacks = new SupplyStacks();
+        supplyStacks.solve();
     }
 }
