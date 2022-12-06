@@ -4,50 +4,63 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.*;
 
+import static java.lang.Integer.parseInt;
+
 public class SupplyStacks {
+
+    public ArrayList<Stack<String>> initializeStacks(int width) {
+        ArrayList<Stack<String>> stacks = new ArrayList<>(width);
+        for (int i = 0; i <= width; i++){
+            Stack<String> stack = new Stack<>();
+            stacks.add(stack);
+        }
+        System.out.println(stacks);
+        return stacks;
+    }
 
     public void solve() {
         try {
             File file = new File("assets/texts/day5.txt");
             Scanner scanner = new Scanner(file);
-            int maxLengthOfInitialArrays = 0;
             boolean allDataFetched = false;
-            List<Queue<String>> queues = new ArrayList<Queue<String>>(9);
-            Queue<String> queue1 = new LinkedList<>();
-            Queue<String> queue2 = new LinkedList<>();
-            Queue<String> queue3 = new LinkedList<>();
-            Queue<String> queue4 = new LinkedList<>();
-            Queue<String> queue5 = new LinkedList<>();
-            Queue<String> queue6 = new LinkedList<>();
-            Queue<String> queue7 = new LinkedList<>();
-            Queue<String> queue8 = new LinkedList<>();
-            Queue<String> queue9 = new LinkedList<>();
+            ArrayList<Stack<String>> stacks = initializeStacks(9);
+            ArrayList<ArrayList<Integer>> instructions = new ArrayList<>();
             while (scanner.hasNextLine()) {
                 String data = scanner.nextLine();
-                if(!allDataFetched && data.length() > 0 && data.charAt(0) != ' ') {
+                if (!allDataFetched && data.length() > 0 && data.charAt(0) != ' ') {
                     System.out.println(data.length());
-                    if (data.charAt(1) != ' ') queue1.add(String.valueOf(data.charAt(1)));
-                    if (data.charAt(5) != ' ') queue2.add(String.valueOf(data.charAt(5)));
-                    if (data.charAt(9) != ' ') queue3.add(String.valueOf(data.charAt(9)));
-                    if (data.charAt(13) != ' ') queue4.add(String.valueOf(data.charAt(13)));
-                    if (data.charAt(17) != ' ') queue5.add(String.valueOf(data.charAt(17)));
-                    if (data.charAt(21) != ' ') queue6.add(String.valueOf(data.charAt(21)));
-                    if (data.charAt(25) != ' ') queue7.add(String.valueOf(data.charAt(25)));
-                    if (data.charAt(29) != ' ') queue8.add(String.valueOf(data.charAt(29)));
-                    if (data.charAt(33) != ' ') queue9.add(String.valueOf(data.charAt(33)));
-                } else {
+                    int j = 0;
+                    for (int i = 1; i <= 33; i += 4) {
+                        if (data.charAt(i) != ' ') stacks.get(j).push(String.valueOf(data.charAt(i)));
+                        j++;
+                        System.out.println(stacks);
+                    }
+                } else if (!allDataFetched && data.length() == 0) {
                     allDataFetched = true;
+                } else if (data.length() > 0 && data.charAt(0) != ' ') {
+                    ArrayList<Integer> instruction = new ArrayList<>();
+                    instructions.add(instruction);
+                    boolean isNumber = false;
+                    StringBuilder value = new StringBuilder();
+                    for (int i = 0; i < data.length(); i++) {
+                        if (data.charAt(i) == ' ') isNumber = !isNumber;
+                        else if (isNumber) value.append(data.charAt(i));
+                        if ((value.length() > 0 && !isNumber) || i == data.length() - 1) {
+                            instructions.get(instructions.size() - 1).add(parseInt(String.valueOf(value)));
+                            value = new StringBuilder();
+                        }
+                    }
+                    System.out.println(instructions);
                 }
             }
-            System.out.println("Elements of queue1 " + queue1);
-            System.out.println("Elements of queue2 " + queue2);
-            System.out.println("Elements of queue3 " + queue3);
-            System.out.println("Elements of queue4 " + queue4);
-            System.out.println("Elements of queue5 " + queue5);
-            System.out.println("Elements of queue6 " + queue6);
-            System.out.println("Elements of queue7 " + queue7);
-            System.out.println("Elements of queue8 " + queue8);
-            System.out.println("Elements of queue9 " + queue9);
+            scanner.close();
+
+            for (ArrayList<Integer> instruction : instructions) {
+                for (int i = 0; i < instruction.get(0); i++) {
+                    System.out.println(stacks.get(instruction.get(1) - 1).());
+                }
+            }
+
             System.out.println("Day 5 (part1): ");
             System.out.println("Day 5 (part2): ");
         } catch (FileNotFoundException e) {
