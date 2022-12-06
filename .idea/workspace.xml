@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="dfa7ed6a-3b5e-47bb-b06a-32f5613e2007" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AoC-2022/com/moko/aoc/day5/SupplyStacks.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AoC-2022/com/moko/aoc/day5/SupplyStacks.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/moko/aoc/day5/SupplyStacks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/moko/aoc/day5/SupplyStacks.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

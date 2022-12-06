@@ -53,6 +53,14 @@ public class SupplyStacks {
                     System.out.println(instructions);
                 }
             }
+            scanner.close();
+
+            for (ArrayList<Integer> instruction : instructions) {
+                for (int i = 0; i < instruction.get(0); i++) {
+                    System.out.println(stacks.get(instruction.get(1) - 1).());
+                }
+            }
+
             System.out.println("Day 5 (part1): ");
             System.out.println("Day 5 (part2): ");
         } catch (FileNotFoundException e) {
