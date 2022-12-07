@@ -4,9 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dfa7ed6a-3b5e-47bb-b06a-32f5613e2007" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/out/production/AoC-2022/com/moko/aoc/day5/SupplyStacks.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AoC-2022/com/moko/aoc/day5/SupplyStacks.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/moko/aoc/day5/SupplyStacks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/moko/aoc/day5/SupplyStacks.java" afterDir="false" />
+    <list default="true" id="58e51fe6-b411-4e90-b4e2-c2698616dd45" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/assets/texts/day6.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/moko/aoc/day6/TuningTrouble.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AoC-2022/com/moko/aoc/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AoC-2022/com/moko/aoc/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/moko/aoc/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/moko/aoc/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,7 +29,7 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectId" id="2ISbVeUna4YbNlFxrJnFPnibqqV" />
+  <component name="ProjectId" id="2IbFjgREbLHJYJvrSGAf9KY7qJ6" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
@@ -36,19 +39,10 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;19&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/assets/text" />
-    </key>
-  </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.moko.aoc.Main" />
@@ -63,6 +57,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
@@ -72,15 +77,12 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="8b3c32d5-f905-4129-b04f-1e08040a8693" name="Changes" comment="" />
-      <created>1670177956190</created>
+      <changelist id="58e51fe6-b411-4e90-b4e2-c2698616dd45" name="Changes" comment="" />
+      <created>1670442521405</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1670177956190</updated>
+      <updated>1670442521405</updated>
     </task>
     <servers />
-  </component>
-  <component name="VcsManagerConfiguration">
-    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>
