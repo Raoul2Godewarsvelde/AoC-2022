@@ -5,11 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="58e51fe6-b411-4e90-b4e2-c2698616dd45" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/assets/texts/day6.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/moko/aoc/day6/TuningTrouble.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AoC-2022/com/moko/aoc/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AoC-2022/com/moko/aoc/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/moko/aoc/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/moko/aoc/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/moko/aoc/day6/TuningTrouble.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/moko/aoc/day6/TuningTrouble.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
