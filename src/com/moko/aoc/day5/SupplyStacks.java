@@ -17,6 +17,22 @@ public class SupplyStacks {
         return queues;
     }
 
+    public ArrayList<ArrayDeque<String>> applyInstructions(ArrayList<ArrayDeque<String>> queues, ArrayList<ArrayList<Integer>> instructions) {
+        for (ArrayList<Integer> instruction : instructions) {
+            for (int i = 0; i < instruction.get(0); i++) {
+                queues.get(instruction.get(2) - 1).offerFirst(queues.get(instruction.get(1) - 1).removeFirst());
+            }
+        }
+        return queues;
+    }
+
+    public StringBuilder getResult(StringBuilder result, ArrayList<ArrayDeque<String>> queues) {
+        for (ArrayDeque<String> queue : queues) {
+            result.append(queue.peekFirst());
+        }
+        return result;
+    }
+
     public void solve() {
         try {
             File file = new File("assets/texts/day5.txt");
@@ -50,16 +66,8 @@ public class SupplyStacks {
                 }
             }
             scanner.close();
-            for (ArrayList<Integer> instruction : instructions) {
-                for (int i = 0; i < instruction.get(0); i++) {
-                    queues.get(instruction.get(2) - 1).offerFirst(queues.get(instruction.get(1) - 1).removeFirst());
-                }
-            }
-            StringBuilder result = new StringBuilder();
-            for (ArrayDeque<String> queue : queues) {
-                result.append(queue.peekFirst());
-            }
-
+            queues = applyInstructions(queues, instructions);
+            StringBuilder result = getResult(new StringBuilder(), queues);
             System.out.println("Day 5 (part1): " + result);
             System.out.println("Day 5 (part2): ");
         } catch (FileNotFoundException e) {
