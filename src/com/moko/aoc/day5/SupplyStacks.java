@@ -8,14 +8,13 @@ import static java.lang.Integer.parseInt;
 
 public class SupplyStacks {
 
-    public ArrayList<Stack<String>> initializeStacks(int width) {
-        ArrayList<Stack<String>> stacks = new ArrayList<>(width);
+    public ArrayList<ArrayDeque<String>> initializeQueues(int width) {
+        ArrayList<ArrayDeque<String>> queues = new ArrayList<>(width);
         for (int i = 0; i <= width; i++){
-            Stack<String> stack = new Stack<>();
-            stacks.add(stack);
+            ArrayDeque<String> stack = new ArrayDeque<>();
+            queues.add(stack);
         }
-        System.out.println(stacks);
-        return stacks;
+        return queues;
     }
 
     public void solve() {
@@ -23,17 +22,15 @@ public class SupplyStacks {
             File file = new File("assets/texts/day5.txt");
             Scanner scanner = new Scanner(file);
             boolean allDataFetched = false;
-            ArrayList<Stack<String>> stacks = initializeStacks(9);
+            ArrayList<ArrayDeque<String>> queues = initializeQueues(8);
             ArrayList<ArrayList<Integer>> instructions = new ArrayList<>();
             while (scanner.hasNextLine()) {
                 String data = scanner.nextLine();
                 if (!allDataFetched && data.length() > 0 && data.charAt(0) != ' ') {
-                    System.out.println(data.length());
                     int j = 0;
                     for (int i = 1; i <= 33; i += 4) {
-                        if (data.charAt(i) != ' ') stacks.get(j).push(String.valueOf(data.charAt(i)));
+                        if (data.charAt(i) != ' ') queues.get(j).add(String.valueOf(data.charAt(i)));
                         j++;
-                        System.out.println(stacks);
                     }
                 } else if (!allDataFetched && data.length() == 0) {
                     allDataFetched = true;
@@ -50,18 +47,20 @@ public class SupplyStacks {
                             value = new StringBuilder();
                         }
                     }
-                    System.out.println(instructions);
                 }
             }
             scanner.close();
-
             for (ArrayList<Integer> instruction : instructions) {
                 for (int i = 0; i < instruction.get(0); i++) {
-                    System.out.println(stacks.get(instruction.get(1) - 1).());
+                    queues.get(instruction.get(2) - 1).offerFirst(queues.get(instruction.get(1) - 1).removeFirst());
                 }
             }
+            StringBuilder result = new StringBuilder();
+            for (ArrayDeque<String> queue : queues) {
+                result.append(queue.peekFirst());
+            }
 
-            System.out.println("Day 5 (part1): ");
+            System.out.println("Day 5 (part1): " + result);
             System.out.println("Day 5 (part2): ");
         } catch (FileNotFoundException e) {
             System.out.println("An error occurred.");
