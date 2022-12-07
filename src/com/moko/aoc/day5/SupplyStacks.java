@@ -17,10 +17,23 @@ public class SupplyStacks {
         return queues;
     }
 
-    public ArrayList<ArrayDeque<String>> applyInstructions(ArrayList<ArrayDeque<String>> queues, ArrayList<ArrayList<Integer>> instructions) {
+    public ArrayList<ArrayDeque<String>> applyInstructionsPart1(ArrayList<ArrayDeque<String>> queues, ArrayList<ArrayList<Integer>> instructions) {
         for (ArrayList<Integer> instruction : instructions) {
             for (int i = 0; i < instruction.get(0); i++) {
                 queues.get(instruction.get(2) - 1).offerFirst(queues.get(instruction.get(1) - 1).removeFirst());
+            }
+        }
+        return queues;
+    }
+
+    public ArrayList<ArrayDeque<String>> applyInstructionsPart2(ArrayList<ArrayDeque<String>> queues, ArrayList<ArrayList<Integer>> instructions) {
+        for (ArrayList<Integer> instruction : instructions) {
+            Stack<String> stackBuffer = new Stack<>();
+            for (int i = 0; i < instruction.get(0); i++) {
+                stackBuffer.add(queues.get(instruction.get(1) - 1).removeFirst());
+            }
+            for (int i = 0; i < instruction.get(0); i++) {
+                queues.get(instruction.get(2) - 1).offerFirst(stackBuffer.pop());
             }
         }
         return queues;
@@ -38,14 +51,16 @@ public class SupplyStacks {
             File file = new File("assets/texts/day5.txt");
             Scanner scanner = new Scanner(file);
             boolean allDataFetched = false;
-            ArrayList<ArrayDeque<String>> queues = initializeQueues(8);
+            ArrayList<ArrayDeque<String>> queuesPart1 = initializeQueues(8);
+            ArrayList<ArrayDeque<String>> queuesPart2 = initializeQueues(8);
             ArrayList<ArrayList<Integer>> instructions = new ArrayList<>();
             while (scanner.hasNextLine()) {
                 String data = scanner.nextLine();
                 if (!allDataFetched && data.length() > 0 && data.charAt(0) != ' ') {
                     int j = 0;
                     for (int i = 1; i <= 33; i += 4) {
-                        if (data.charAt(i) != ' ') queues.get(j).add(String.valueOf(data.charAt(i)));
+                        if (data.charAt(i) != ' ') queuesPart1.get(j).add(String.valueOf(data.charAt(i)));
+                        if (data.charAt(i) != ' ') queuesPart2.get(j).add(String.valueOf(data.charAt(i)));
                         j++;
                     }
                 } else if (!allDataFetched && data.length() == 0) {
@@ -66,10 +81,12 @@ public class SupplyStacks {
                 }
             }
             scanner.close();
-            queues = applyInstructions(queues, instructions);
-            StringBuilder result = getResult(new StringBuilder(), queues);
-            System.out.println("Day 5 (part1): " + result);
-            System.out.println("Day 5 (part2): ");
+            queuesPart1 = applyInstructionsPart1(queuesPart1, instructions);
+            queuesPart2 = applyInstructionsPart2(queuesPart2, instructions);
+            StringBuilder resultPart1 = getResult(new StringBuilder(), queuesPart1);
+            StringBuilder resultPart2 = getResult(new StringBuilder(), queuesPart2);
+            System.out.println("Day 5 (part1): " + resultPart1);
+            System.out.println("Day 5 (part2): " + resultPart2);
         } catch (FileNotFoundException e) {
             System.out.println("An error occurred.");
             e.printStackTrace();
