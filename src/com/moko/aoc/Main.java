@@ -6,6 +6,7 @@ import com.moko.aoc.day3.RucksackReorganization;
 import com.moko.aoc.day4.CampCleanup;
 import com.moko.aoc.day5.SupplyStacks;
 import com.moko.aoc.day6.TuningTrouble;
+import com.moko.aoc.day7.NoSpaceLeftOnDevice;
 
 import java.io.IOException;
 
@@ -29,5 +30,8 @@ public class Main {
 
         TuningTrouble tuningTrouble = new TuningTrouble();
         tuningTrouble.solve();
+
+        NoSpaceLeftOnDevice noSpaceLeftOnDevice = new NoSpaceLeftOnDevice();
+        noSpaceLeftOnDevice.solve();
     }
 }

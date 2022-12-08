@@ -31,6 +31,7 @@ public class TuningTrouble {
         }
         return value;
     }
+
     public void solve() {
         try {
             File file = new File("assets/texts/day6.txt");
