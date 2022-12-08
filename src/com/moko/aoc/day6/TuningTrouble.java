@@ -21,7 +21,7 @@ public class TuningTrouble {
             if (i < size) queue.add(String.valueOf(data.charAt(i)));
             else {
                 queue.add(String.valueOf(data.charAt(i)));
-                String removedItem = queue.remove(0);
+                queue.remove(0);
                 ArrayList<String> queueCopy = new ArrayList<>(queue);
                 if (areUnique(queueCopy)) {
                     value = i + 1;
@@ -31,6 +31,7 @@ public class TuningTrouble {
         }
         return value;
     }
+
     public void solve() {
         try {
             File file = new File("assets/texts/day6.txt");
