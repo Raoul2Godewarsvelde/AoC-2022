@@ -5,14 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="58e51fe6-b411-4e90-b4e2-c2698616dd45" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/assets/texts/day7.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/moko/aoc/day7/NoSpaceLeftOnDevice.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/moko/aoc/day7/Node.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/moko/aoc/day7/Tree.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AoC-2022/com/moko/aoc/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AoC-2022/com/moko/aoc/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AoC-2022/com/moko/aoc/day6/TuningTrouble.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AoC-2022/com/moko/aoc/day6/TuningTrouble.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/moko/aoc/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/moko/aoc/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/moko/aoc/day6/TuningTrouble.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/moko/aoc/day6/TuningTrouble.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AoC-2022/com/moko/aoc/day7/NoSpaceLeftOnDevice.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AoC-2022/com/moko/aoc/day7/NoSpaceLeftOnDevice.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AoC-2022/com/moko/aoc/day7/Node.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AoC-2022/com/moko/aoc/day7/Node.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/moko/aoc/day7/NoSpaceLeftOnDevice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/moko/aoc/day7/NoSpaceLeftOnDevice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/moko/aoc/day7/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/moko/aoc/day7/Node.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,7 +41,8 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.fonts.default&quot;
   }
 }</component>
   <component name="RunManager">
@@ -87,5 +86,9 @@
       <updated>1670442521405</updated>
     </task>
     <servers />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
